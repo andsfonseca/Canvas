@@ -1,0 +1,13 @@
+body{
+	overflow: hidden;
+}
+
+.form-inline button {
+	margin-right: 10px;
+}
+
+.selectButtons {
+	position: absolute;
+	width:30px;
+	z-index:2;
+}

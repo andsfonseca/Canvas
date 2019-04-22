@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas</title>
+  <script type="text/javascript" src="http://livejs.com/live.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+	<nav id="navbar" class="navbar navbar-dark bg-dark" style="z-index:99999">
+  		<a class="navbar-brand" href="#">Canvas</a>
+		<div class="form-inline">
+			<button id="navbarPanelButtonMirror" class="btn btn-light" onclick="setInteraction('mirror')"><i class="fab fa-buromobelexperte"></i></button>
+			<button id="navbarPanelButtonRotate" class="btn btn-light" onclick="setInteraction('rotate')"><i class="fas fa-undo-alt"></i></button>
+			<button id="navbarPanelButtonScale" class="btn btn-light" onclick="setInteraction('scale')"><i class="fas fa-text-width"></i></button>
+			<button id="navbarPanelButtonMousePointer" class="btn btn-light" onclick="setInteraction('select')"><i class="fas fa-mouse-pointer"></i></button>
+			<button id="navbarPanelButtonPencil" class="btn btn-light" onclick="setInteraction('point')"><i class="fas fa-pencil-alt"></i></button>
+			<button id="navbarPanelButtonLineArrow" class="btn btn-light" onclick="setInteraction('line')"><i class="fas fa-long-arrow-alt-left"></i></button>
+			<button id="navbarPanelButtonSquare" class="btn btn-light" onclick="setInteraction('polygon')"><i class="fas fa-square"></i></button>
+			<button id="navbarPanelButtonCircle" class="btn btn-light" onclick="setInteraction('arc')"><i class="fas fa-circle-notch"></i></button>
+			<button id="navbarPanelButtonBezier" class="btn btn-light" onclick="setInteraction('bezier')"><i class="fab fa-glide"></i></button>
+			<button id="navbarPanelButtonEraser" class="btn btn-light" onclick="setInteraction('eraser')"><i class="fas fa-eraser"></i></button>
+			<button id="navbarPanelButtonRead" class="btn btn-light" onclick="setInteraction('read')"><i class="fas fa-file-alt"></i></button>
+			<button id="navbarPanelButtonSave" class="btn btn-light" onclick="setInteraction('download')"><i class="fas fa-save"></i></button>
+			<input id="fileReader" type='file' accept='text/plain' style="position: fixed; top: -100em">
+		</div>
+	</nav>
+
+	<div class="page">
+		<div class="row">
+			<div class="col-md-12">
+				<canvas id="MainCanvas" style="border:1px solid #000000;" oncontextmenu="return false;">
+				</canvas>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="canvas.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
