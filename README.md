@@ -20,4 +20,4 @@ Sinta-se livra pra olhar e alterar :)
 
 Você pode testar aqui:
 
-https://andsfonseca.github.io/Canvas/
+https://andsfonseca.github.io/ufma-js-canvas/
